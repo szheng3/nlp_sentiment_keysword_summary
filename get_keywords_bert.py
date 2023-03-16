@@ -59,7 +59,7 @@ def count_reviews_containing_words(reviews, words, threshold=0.8):
     return counts
 
 if __name__ == "__main__":
-    file_path = "/Users/shuai/PycharmProjects/NLP_project/yelp_dataset/yelp_academic_dataset_review.json"  # Replace with your Yelp dataset path
+    file_path = "/Users/shuai/PycharmProjects/nlp/yelp_dataset/small.json"  # Replace with your Yelp dataset path
     target_business_id = "XQfwVwDr-v0ZS3_CbbE5Xw"  # The business_id you want to extract reviews for
     data = load_data(file_path, target_business_id)
     combined_data = ' '.join(data)
